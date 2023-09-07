@@ -1,4 +1,11 @@
 #include <stdio.h>
+/*
+ * Displays the size 
+ * of
+ * the various
+ * data 
+ * types
+ */
 int main(void)
 {
 	int n;
