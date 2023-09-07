@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
- * this program uses 
- * puts to output 
+ * this program uses
+ * puts to output
  */
 int main(void)
 {
