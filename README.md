@@ -1,1 +1,1 @@
-0. Positive anything is better than negative nothing\n1. The last digit\n2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game\n3. alphABET\n4. When I was having that alphabet soup, I never thought that it would pay off\n5. Numbers\n6. Numberz\n7. Smile in the mirror\n8. Hexadecimal\n9. Patience, persistence and perspiration make an unbeatable combination for success
+alx-low_level_programming
