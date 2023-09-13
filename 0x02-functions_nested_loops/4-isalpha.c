@@ -5,8 +5,7 @@
  * @c: the character to be checked
  * Return: 1 if c is a letter, 0 otherwise
  */
-
-int _isalpha(int a)
+int _isalpha(int c)
 {
-	return ((a>='a' && a <= 'z')||(a >= 'A' && a <= 'Z'));
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
