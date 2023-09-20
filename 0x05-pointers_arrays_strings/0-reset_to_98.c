@@ -8,7 +8,7 @@
  *
  */
 
-void reset_to_98(int *k)
+void reset_to_98(int *n)
 {
-	*k=98;
+	*n=98;
 }
