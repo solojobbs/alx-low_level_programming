@@ -5,8 +5,10 @@
  *
  * _strcat - function that concatenates two strings.
  *
- * @d: first entry
- * @s: second entry
+ * @d: destination string
+ * @s: source string
+ *
+ * Return: A pointer to the resulting string d
  *
  */
 
