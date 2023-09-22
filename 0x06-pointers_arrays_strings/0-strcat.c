@@ -12,23 +12,15 @@
 
 char *_strcat(char *d, char *s)
 {
-    int len = 0;
-    int i = 0;
+    int len;
+    int i;
 
-    
-    while (d[len] != '\0')
+    for(len = 0; d[len] != '\0'; len++)
+	    ;
+    for(i = 0; s[i] != '\0'; i++)
     {
-        len++;
-    }
-
-    
-    while (s[i] != '\0')
-    {
-        d[len + i] = s[i];
-        i++;
-    }
-
-    
+	    d[len + i] = s[i];
+    }    
     d[len + i] = '\0';
 
     return d;
