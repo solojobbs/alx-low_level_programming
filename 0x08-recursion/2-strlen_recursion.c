@@ -5,7 +5,7 @@
  *
  * @a: the string of which lenghth to be found
  *
- * the function returns the length of the string
+ * Return: the function returns the length of the string
  *
  */
 
@@ -17,4 +17,4 @@ int  _strlen_recursion(char *a)
 	}
 	a++;
 	return (_strlen_recursion(a) + 1);
-}	
+}
