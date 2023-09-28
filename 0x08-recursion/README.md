@@ -1,0 +1,2 @@
+0. She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget\nWhy is it so important to dream? Because, in my dreams we are together\nDreams feel real while we're in them. It's only when we wake up that we realize something was actually strange\nYou mustn't be afraid to dream a little bigger, darling\nOnce an idea has taken hold of the brain it's almost impossible to eradicate
+\nYour subconscious is looking for the dreamer\nInception. Is it possible?
