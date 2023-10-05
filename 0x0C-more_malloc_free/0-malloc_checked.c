@@ -6,7 +6,7 @@
  *
  * @n: memory size
  *
- * Return: a pointer to the allocated memory
+ * Return: nothing
  */
 
 void *malloc_checked(unsigned int n)
