@@ -7,24 +7,23 @@
  * @accept: The characters to search for.
  *
  * Return: A pointer to the first occurrence of any character in
- *         'accept' in the string 's', or NULL if no such character is found.
+ * 'accept' in the string 's', or NULL if no such character is found.
  */
 char *_strpbrk(char *s, char *accept)
 {
-    while (*s)
-    {
-        char *a = accept;
-        while (*a)
-        {
-            if (*s == *a)
-            {
-                return s;
-            }
-            a++;
-        }
-        s++;
-    }
+	int i, j;
 
-    return NULL;
+	for (i = 0; *s != '\0'; i++)
+	{
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (*s == accept[j])
+			{
+				return (s);
+			}
+		}
+		s++;
+	}
+
+	return (NULL);
 }
-

@@ -10,11 +10,10 @@ int _islower(int c)
 {
     if (c >= 'a' && c <= 'z')
     {
-        return 1;  // @c is a lowercase letter
+        return (1);
     }
     else
     {
-        return 0;  // @c is not a lowercase letter
+        return (0);
     }
 }
-

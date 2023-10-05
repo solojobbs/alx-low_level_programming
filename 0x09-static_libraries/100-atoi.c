@@ -8,34 +8,39 @@
  */
 int _atoi(char *s)
 {
-    int result = 0;  // Initialize the result
-    int sign = 1;    // Initialize the sign as positive (1)
-    int i = 0;
+	int i, d, n, len, f, digit;
 
-    // Check for a negative sign and update the sign accordingly
-    if (s[0] == '-')
-    {
-        sign = -1;
-        i++;
-    }
+	i = 0;
+	d = 0;
+	n = 0;
+	len = 0;
+	f = 0;
+	digit = 0;
 
-    // Iterate through the characters in the string
-    while (s[i] != '\0')
-    {
-        // Check if the current character is a digit
-        if (s[i] >= '0' && s[i] <= '9')
-        {
-		result = result * 10 + (s[i] - '0');
-        }
-        else
-        {
-            break;
-        }
-        i++;
-    }
+	while (s[len] != '\0')
+		len++;
 
+	while (i < len && f == 0)
+	{
+		if (s[i] == '-')
+			++d;
 
-    result *= sign;
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			digit = s[i] - '0';
+			if (d % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			f = 0;
+		}
+		i++;
+	}
 
-    return result;
+	if (f == 0)
+		return (0);
+
+	return (n);
 }
