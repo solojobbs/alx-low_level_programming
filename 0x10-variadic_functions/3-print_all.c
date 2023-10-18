@@ -11,7 +11,7 @@
 void print_all(const char * const arglist, ...)
 {
 	int i = 0;
-	char *s, *sp = "";
+	char *str, *sp = "";
 
 	va_list ls;
 
@@ -23,22 +23,22 @@ void print_all(const char * const arglist, ...)
 		{
 			switch (arglist[i])
 			{
-				case "c":
+				case 'c':
 					printf("%s%c", sp, va_arg(ls, int));
 					break;
-				case "i":
+				case 'i':
 					printf("%s%d", sp, va_arg(ls, int));
                                         break;
-				case "f":
+				case 'f':
 					printf("%s%f", sp, va_arg(ls, double));
                                         break;
-				case "s":
-					s = va_arg(ls, char *);
+				case 's':
+					str = va_arg(ls, char *);
 					
-					if (!s)
-						s = "(nil)";
+					if (str == NULL)
+						str = "(nil)";
 
-					printf("%s%s", sp, va_arg(ls, s));
+					printf("%s%s", sp, str);
                                         break;
 				default:
 					i++;
