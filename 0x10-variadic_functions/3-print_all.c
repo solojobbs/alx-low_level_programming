@@ -51,5 +51,6 @@ void print_all(const char * const arglist, ...)
 	}
 
 	printf("\n");
+
 	va_end(ls);
 }
